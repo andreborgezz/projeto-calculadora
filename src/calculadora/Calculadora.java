@@ -1,23 +1,61 @@
 ﻿package calculadora;
 
+/**
+ * Projeto Calculadora - FinancApp
+ *
+ * essa classe fornece operacoes matematicas basicas como soma, subtracao,
+ * multiplicacao e divisao, alem de um metodo principal que seleciona a operacao
+ * com base no operador informado.
+ *
+ * apos a refatoracao, os metodos sao metodos puros, sem efeitos colaterais,
+ * facilitando testes unitarios e a leitura do codigo.
+ *
+ * @author andreborgezz
+ * @version 2.0
+ */
 public class Calculadora {
 
-    // soma dois numeros inteiros e retorna o resultado
+    /**
+     * soma dois numeros inteiros.
+     *
+     * @param a primeiro operando
+     * @param b segundo operando
+     * @return o resultado da soma de a e b
+     */
     public int somar(int a, int b) {
         return a + b;
     }
 
-    // subtrai b de a e retorna o resultado
+    /**
+     * subtrai b de a.
+     *
+     * @param a primeiro operando
+     * @param b segundo operando
+     * @return o resultado da subtracao de a menos b
+     */
     public int subtrair(int a, int b) {
         return a - b;
     }
 
-    // multiplica dois numeros inteiros e retorna o resultado
+    /**
+     * multiplica dois numeros inteiros.
+     *
+     * @param a primeiro operando
+     * @param b segundo operando
+     * @return o produto de a e b
+     */
     public int multiplicar(int a, int b) {
         return a * b;
     }
 
-    // divide a por b, lanca excecao se b for zero
+    /**
+     * divide a por b. lanca excecao se b for zero.
+     *
+     * @param a dividendo
+     * @param b divisor
+     * @return o quociente inteiro de a dividido por b
+     * @throws IllegalArgumentException se b for igual a zero
+     */
     public int dividir(int a, int b) {
         if (b == 0) {
             throw new IllegalArgumentException("Divisao por zero nao e permitida.");
@@ -25,7 +63,18 @@ public class Calculadora {
         return a / b;
     }
 
-    // seleciona e executa a operacao com base no operador informado
+    /**
+     * executa a operacao matematica com base no operador informado.
+     *
+     * operadores aceitos: "+" soma, "-" subtracao, "*" multiplicacao, "/" divisao.
+     * qualquer outro operador resulta em excecao.
+     *
+     * @param a        primeiro operando
+     * @param b        segundo operando
+     * @param operador simbolo da operacao desejada
+     * @return o resultado da operacao correspondente ao operador informado
+     * @throws IllegalArgumentException se o operador nao for valido
+     */
     public int calcular(int a, int b, String operador) {
         return switch (operador) {
             case "+" -> somar(a, b);

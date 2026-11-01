@@ -1,7 +1,24 @@
 ﻿package calculadora;
 
+/**
+ * classe de testes da Calculadora refatorada.
+ *
+ * executa testes manuais dos metodos somar, subtrair, multiplicar, dividir
+ * e calcular, incluindo cenarios de erro tratados com try catch.
+ *
+ * @author andreborgezz
+ * @version 2.0
+ */
 public class TesteCalculadora {
 
+    /**
+     * metodo principal que executa todos os testes da calculadora.
+     *
+     * testa as 4 operacoes basicas e os dois casos de excecao:
+     * divisao por zero e operador invalido.
+     *
+     * @param args argumentos de linha de comando, nao utilizados
+     */
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
 
