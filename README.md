@@ -1,4 +1,4 @@
-﻿# Projeto Calculadora — FinancApp
+# Projeto Calculadora — FinancApp
 
 > Projeto academico desenvolvido com foco em Qualidade de Software, Testes, Refatoracao, Documentacao e Versionamento.
 
@@ -178,7 +178,11 @@ A refatoracao transformou um unico metodo calc() com if/else if em metodos separ
 
 ### Evidencia visual
 
-![Refatoracao](images/refatoracao/diff.png)
+![Refatoracao 1](images/refatoracao/diff1.png)
+
+![Refatoracao 2](images/refatoracao/diff2.png)
+
+![Refatoracao 3](images/refatoracao/diff3.png)
 
 ---
 
