@@ -1,4 +1,4 @@
-﻿package calculadora;
+package calculadora;
 
 /**
  * Projeto Calculadora - FinancApp
@@ -6,9 +6,6 @@
  * essa classe fornece operacoes matematicas basicas como soma, subtracao,
  * multiplicacao e divisao, alem de um metodo principal que seleciona a operacao
  * com base no operador informado.
- *
- * apos a refatoracao, os metodos sao metodos puros, sem efeitos colaterais,
- * facilitando testes unitarios e a leitura do codigo.
  *
  * @author andreborgezz
  * @version 2.0
@@ -65,9 +62,6 @@ public class Calculadora {
 
     /**
      * executa a operacao matematica com base no operador informado.
-     *
-     * operadores aceitos: "+" soma, "-" subtracao, "*" multiplicacao, "/" divisao.
-     * qualquer outro operador resulta em excecao.
      *
      * @param a        primeiro operando
      * @param b        segundo operando

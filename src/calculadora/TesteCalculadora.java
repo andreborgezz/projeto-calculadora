@@ -1,4 +1,4 @@
-﻿package calculadora;
+package calculadora;
 
 /**
  * classe de testes da Calculadora refatorada.
